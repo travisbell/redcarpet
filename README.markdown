@@ -1,7 +1,7 @@
 Redcarpet is written with sugar, spice and everything nice
 ============================================================
 
-[![Build Status](https://travis-ci.org/vmg/redcarpet.svg?branch=master)](https://travis-ci.org/vmg/redcarpet)
+[![Build status](https://github.com/vmg/redcarpet/actions/workflows/test.yml/badge.svg)](https://github.com/vmg/redcarpet/actions/workflows/test.yml)
 [![Help Contribute to Open Source](https://www.codetriage.com/vmg/redcarpet/badges/users.svg)](https://www.codetriage.com/vmg/redcarpet)
 [![Gem Version](https://badge.fury.io/rb/redcarpet.svg)](https://badge.fury.io/rb/redcarpet)
 
@@ -341,8 +341,8 @@ Redcarpet::Render::SmartyPants.render("<p>Oh SmartyPants, you're so crazy...</p>
 ~~~~
 
 SmartyPants works on top of already-rendered HTML, and will ignore replacements
-inside the content of HTML tags and inside specific HTML blocks such as
-`<code>` or `<pre>`.
+inside the content of HTML tags and inside specific HTML blocks (`pre`, `code`,
+`var`, `samp`, `kbd`, `math`, `script`, `style`).
 
 What? You really want to mix Markdown renderers?
 ------------------------------------------------
